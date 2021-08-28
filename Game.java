@@ -2,20 +2,17 @@ package bullscows;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Game {
 
 
     public static String createCode() {
         Random random = new Random();
-        int lower = 100_000_000;
-        int upper = 1_000_000_000;
         String alphabetNum = "0123456789abcdefghijklmnopqrstuvwxyz";
         StringBuilder secretNumber = new StringBuilder();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input the length of the secret code:");
-        int inputNumbers = 0;
+        int inputNumbers;
         String input = scanner.nextLine();
         try {
             inputNumbers = Integer.parseInt(input);
